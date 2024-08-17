@@ -29,7 +29,7 @@ const cardApi = baseApi.injectEndpoints({
             query: (searchTerm: string) => ({
               url: `/cards`,
               method: "GET",
-              params: { searchTerm:searchTerm }, // This uses URLSearchParams to append query parameters correctly
+              params: { searchTerm:searchTerm },
             }),
             providesTags: ["carts"],
           }),
