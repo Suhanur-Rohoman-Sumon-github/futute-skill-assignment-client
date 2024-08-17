@@ -44,7 +44,7 @@ This project is a web application built using React and TypeScript, designed to 
    or
    yarn dev
    ```
-## Tech Stack
+## Usage
 
 - Users can find a form to write and submit their problems on the homepage.
 - Use the search bar at the top of the homepage to filter problems by title or keywords.
