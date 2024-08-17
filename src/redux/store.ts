@@ -1,13 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { baseApi } from './api/baseApi'
+import cardSlice from './fetures/card/card.slice'
 
 // ...
 
 export const store = configureStore({
   reducer: {
-   
     [baseApi.reducerPath]: baseApi.reducer,
-    
+    cards:cardSlice
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(baseApi.middleware),
