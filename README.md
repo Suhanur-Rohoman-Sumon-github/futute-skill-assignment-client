@@ -1,51 +1,54 @@
-# React + TypeScript + Vite
+# Problem Reporting & Filtering Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a web application built using React and TypeScript, designed to allow users to submit their problems and filter them using a search feature.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Submit Problems**: Users can easily write and submit their problems.
+- **Search and Filter**:Users can filter through the submitted problems using a search bar, making it easy to find specific issues.
+- **Responsive Design**: The application is fully responsive, ensuring a seamless experience across different devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React
+- TypeScript
+- Redux Toolkit (for state management)
+- React Hook Form (for handling forms)
+- Axios (for API calls)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# futute-skill-assignment-client
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Suhanur-Rohoman-Sumon-github/futute-skill-assignment-client
+   cd futute-skill-assignment-client
+  
+
+   
+2. Install dependencies:
+    ```bash
+   npm install
+   or
+   yarn install
+
+3. Development:
+     ```bash
+   npm run dev
+   or
+   yarn dev
+   ```
+## Tech Stack
+
+- Users can find a form to write and submit their problems on the homepage.
+- Use the search bar at the top of the homepage to filter problems by title or keywords.
+
+
+
+   
